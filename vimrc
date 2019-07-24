@@ -16,11 +16,11 @@ set modelines=0
 
 " ========================================================================================
 "TAB settings.
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
-set showtabline=2
+set showtabline=4
 set ruler
 
 " ========================================================================================
@@ -86,8 +86,8 @@ set mouse=a
 
 " ========================================================================================
 "Settings for Searching and Moving
-nnoremap / /\v
-vnoremap / /\v
+""nnoremap / /\v
+""vnoremap / /\v
 set ignorecase
 set smartcase
 set incsearch
@@ -619,10 +619,10 @@ autocmd VimEnter * SignatureToggleSigns
 if &diff 
     "autocmd VimEnter * NERDTree .
 else 
-    autocmd VimEnter * NERDTree .
-    autocmd VimEnter * TagbarOpen
+    ""autocmd VimEnter * NERDTree .
+    ""autocmd VimEnter * TagbarOpen
     autocmd VimEnter * helptags ~/.vim/doc
-    autocmd VimEnter * exe 2 . "wincmd w"
+    autocmd VimEnter * exe 1 . "wincmd w"
     autocmd VimEnter * call CheckIfMain()
     autocmd VimEnter * call LoadCScopeDatabases()
     autocmd VimEnter * call DetectFileType()
