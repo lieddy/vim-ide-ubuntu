@@ -1122,3 +1122,5 @@ nmap <C-]> g<C-]>
 " ======================================================================================== 
 " rainbow levels toggle
 nmap <leader>rlt :RainbowLevelsToggle<cr>
+set cinoptions+=g0                                                                                                                                                                             
+imap [[ ;<esc>i{<cr>
