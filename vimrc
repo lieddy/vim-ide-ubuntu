@@ -1124,3 +1124,4 @@ nmap <C-]> g<C-]>
 nmap <leader>rlt :RainbowLevelsToggle<cr>
 set cinoptions+=g0                                                                                                                                                                             
 imap [[ ;<esc>i{<cr>
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
